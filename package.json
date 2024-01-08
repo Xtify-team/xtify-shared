@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "exports": {
-    "default": "./dist/index",
-    "logger": "./dist/logger/index"
+    "default": "./dist/index.mjs",
+    "logger": "./dist/logger/index.mjs"
   },
   "scripts": {
     "dev": "unbuild --stub ",
