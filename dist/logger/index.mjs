@@ -1,12 +1,1 @@
-import jiti from "file:///C:/Users/1/Desktop/%E8%87%AA%E7%94%A8%E6%96%87%E4%BB%B6/xtify-shared/node_modules/.pnpm/jiti@1.21.0/node_modules/jiti/lib/index.js";
-
-/** @type {import("C:/Users/1/Desktop/自用文件/xtify-shared/src/logger/index")} */
-const _module = jiti(null, {
-  "esmResolve": true,
-  "interopDefault": true,
-  "alias": {
-    "xtify-shared": "C:/Users/1/Desktop/自用文件/xtify-shared"
-  }
-})("C:/Users/1/Desktop/自用文件/xtify-shared/src/logger/index.ts");
-
-export const logger = _module.logger;
+import n from"debug";const o=e=>{const r=n(`${e}:log`),l=n(`${e}:error`),a=n(`${e}:warn`),d=n(`${e}:success`);return{log:r,error:l,warn:a,success:d,enabled(){r.enabled=!0,l.enabled=!0,a.enabled=!0,d.enabled=!0},disabled(){r.enabled=!1,l.enabled=!1,a.enabled=!1,d.enabled=!1}}};export{o as logger};
